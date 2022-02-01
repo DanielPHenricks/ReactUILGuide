@@ -1,0 +1,38 @@
+#include < bits/stdc++.h>
+#define ln '\n'
+#define pb push_back
+using namespace std;
+typedef long long ll;
+ll n, m, c;
+const int MAXN = 10e5+1;
+bool hasCat[MAXN];
+vector< ll> adj_list[MAXN];
+bool visited[MAXN];
+ll dfs (ll curr, ll cats, ll prev) {
+    visited[curr] = true;
+    if(hasCat[curr]) {
+        cats--;
+        if(cats < 0) return 0;
+    }
+    else cats = m;
+    if(adj_list[curr].size() == 1 && adj_list[curr].at(0) == prev) ++c;
+    for(auto &a: adj_list[curr]){
+        if(!visited[a]) dfs(a, cats, curr);
+    }
+    return 0;
+}
+int main() {
+    cin >> n >> m;
+    for(int i = 0; i < n; i++){
+        ll num; cin >> num;
+        if(num == 1) hasCat[i+1] = true;
+    }
+    for(int i = 0; i < n-1; i++){
+        ll a, b;
+        cin >> a >> b;
+        adj_list[a].pb(b);
+        adj_list[b].pb(a);
+    }
+    dfs(1, m, 0);
+    cout << c << ln;
+}
