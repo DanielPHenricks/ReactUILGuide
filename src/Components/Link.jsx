@@ -7,6 +7,7 @@ class Link extends React.Component {
         <tr>
             <td>{this.props.name}</td>
             <td><Button size="sm" href={this.props.url}>{this.props.name}</Button></td>
+            <td>{this.props.diff}</td>
         </tr>
         )
     }

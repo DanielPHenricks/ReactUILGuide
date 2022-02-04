@@ -28,5 +28,6 @@
     color: #FFF;
 }
 .darkText{
-    color: #000;
+  color: rgba(106, 202, 231, 0.884);
+  text-align: center;
 }
