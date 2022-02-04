@@ -4,7 +4,7 @@ import React from 'react';
 class CodeComponent extends React.Component{
   render() {
     return (
-      <div style={{width:"80%", margin:"0 auto"}}>
+      <div style={{textAlign: "left", width: "80vw", margin: "0 auto"}}>
       <SyntaxHighlighter language="java" showLineNumbers="true" style={monokaiSublime}> 
         {this.props.code}
       </SyntaxHighlighter>
