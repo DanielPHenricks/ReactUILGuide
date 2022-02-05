@@ -10,7 +10,7 @@ class Easy extends React.Component {
     render(){
         return(
             <div className="main" style={{width:"80vw", margin: "0 auto", color: "white"}}>
-                <h1 className="lato" style={{margin:"20px"}}>UIL Guide</h1>
+                <h1 className="lato" style={{margin:"20px"}}><a href="./">UIL Guide</a></h1>
                 <h1 className="darkText lato" style={{margin:"5px"}}>Easy</h1>
                 <p className="darkText" style={{margin:"5px"}}>This section will cover some of the easier questions. I'm not going to add much here.</p>
                 <h1 className="darkText lato" style={{margin:"5px"}}>Overview of UIL Rules</h1>
