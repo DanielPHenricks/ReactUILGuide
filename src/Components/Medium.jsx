@@ -4,13 +4,40 @@ import CodeComponent  from './CodeComponent';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Link from './Link'
-import { Table } from 'react-bootstrap'
+import {Row, Col, Button, Navbar, Container, Nav, NavDropdown, Table} from 'react-bootstrap'
+import logo from './logo.png'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css' 
 class Medium extends React.Component {
     render(){
         return(
+            <div>
+                <Navbar bg="dark" variant="dark">
+                    <Container>
+                    <Navbar.Brand href="./">
+                        <img
+                        alt=""
+                        src={logo}
+                        width="45"
+                        height="45"
+                        className="d-inline-block"
+                        />{' '}
+                    UIL Guide
+                    </Navbar.Brand>
+                    </Container>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="./">Home</Nav.Link>
+                        <Nav.Link href="./Easy">Easy</Nav.Link>
+                        <Nav.Link href="./Medium">Medium</Nav.Link>
+                        <Nav.Link href="./Hard">Hard</Nav.Link>
+                        <Nav.Link href="https://usaco.guide">Other resources</Nav.Link>
+                    </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            
             <div className="main" style={{width:"80vw", margin: "0 auto", color: "white"}}>
                 <h1 className="lato" style={{margin:"20px"}}><a href="./">UIL Guide</a></h1>
                 <h1 className="darkText lato" style={{margin:"5px"}}>Medium</h1>
@@ -93,6 +120,7 @@ Number of permutations of an array of length $N$: $N!$
                   <Link name="Challenge problem" url="https://codeforces.com/contest/1621/problem/B" diff="9/10"> </Link>
                 </tbody>
               </Table>
+            </div>
             </div>  
          )
     }
