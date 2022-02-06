@@ -20,6 +20,7 @@
 .accentDark{
     color:rgba(105, 187, 212, 0.884);
 }
+
 .btn-primary {
     background-color:rgb(11, 72, 90);
     color: #FFF;
@@ -34,8 +35,8 @@
     border-color: #285e8e;
 }
 .btn-default {
-    background-color: #FFF;
-    color: #333;
+    background-color: #333;
+    color: #FFF;
     border-color: #adadad;
     border-radius: 25px;
 }

@@ -39,7 +39,6 @@ class Medium extends React.Component {
                 </Navbar>
             
             <div className="main" style={{width:"80vw", margin: "0 auto", color: "white"}}>
-                <h1 className="lato" style={{margin:"20px"}}><a href="./">UIL Guide</a></h1>
                 <h1 className="darkText lato" style={{margin:"5px"}}>Medium</h1>
                 <p className="" style={{margin:"5px"}}>This section will cover basic data structures and algoritms on the exam, such as sets, maps, stacks, queues, and arrays. It will also cover operator precedence, palindromes, some math, prefix sums, and other techniques.</p>
                 <h1 className="darkText lato" style={{margin:"5px"}}>Overview of common set questions/methods</h1>

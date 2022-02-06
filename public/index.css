@@ -34,8 +34,8 @@
     border-color: #285e8e;
 }
 .btn-default {
-    background-color: #FFF;
-    color: #333;
+    background-color: #333;
+    color: #FFF;
     border-color: #adadad;
     border-radius: 25px;
 }
@@ -52,4 +52,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.hidden{
+    display: block;
+    color: red;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Row, Col, Button, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import './styles/index.css'
-import './styles/mainStyle.css'
 import { Link } from "react-router-dom";
 import logo from './logo.png'
 class Main extends React.Component {
@@ -32,7 +31,53 @@ class Main extends React.Component {
                     </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-
+        <h1 class="darkText lato" style={{margin: "20px", color: "#fafafa"}}><b>UIL Guide</b></h1>       
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-dark text-light m-2">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">
+                                Easy
+                            </h3>
+                            <p class="card-text">
+                               Learn some more about the basics of UIL and some of the easier topics!
+                            </p>
+                            <a href="http://uilguide.com/Easy" className='btn btn-primary'>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light m-2">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">
+                                Medium
+                            </h3>
+                            <p class="card-text">
+                               Learn some more about the main topics tested on the exam.
+                            </p>
+                            <a href="http://uilguide.com/Medium" className='btn btn-primary'>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light m-2">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-play-btn"></i>
+                            </div>
+                            <h3 class="card-title">
+                                Hard
+                            </h3>
+                            <p class="card-text">
+                               Learn some more about the most difficult topics tested on the exam.
+                            </p>
+                            <a href="http://uilguide.com/Hard" className='btn btn-primary'>Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
         )
         
