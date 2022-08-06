@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Components/Main';
-import Easy from './Components/Easy';
-import Medium from './Components/Medium';
-import Hard from './Components/Hard';
+import Main from './sections/Main';
+import Easy from './sections/Easy';
+import Medium from './sections/Medium';
+import Hard from './sections/Hard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.render(
   <BrowserRouter>

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Row, Col, Button, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
-import './styles/index.css'
+import '../styles/index.css'
 import { Link } from "react-router-dom";
-import logo from './logo.png'
+import logo from '../assets/logo.png'
 class Main extends React.Component {
     render() {
         return(
@@ -43,7 +43,7 @@ class Main extends React.Component {
                             <p class="card-text">
                                Learn some more about the basics of UIL and some of the easier topics!
                             </p>
-                            <a href="http://uilguide.com/Easy" className='btn btn-primary'>Read More</a>
+                            <a href="/Easy" className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ class Main extends React.Component {
                             <p class="card-text">
                                Learn some more about the main topics tested on the exam.
                             </p>
-                            <a href="http://uilguide.com/Medium" className='btn btn-primary'>Read More</a>
+                            <a href="/Medium" className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ class Main extends React.Component {
                             <p class="card-text">
                                Learn some more about the most difficult topics tested on the exam.
                             </p>
-                            <a href="http://uilguide.com/Hard" className='btn btn-primary'>Read More</a>
+                            <a href="/Hard" className='btn btn-primary'>Read More</a>
                         </div>
                     </div>
                 </div>

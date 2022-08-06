@@ -1,20 +1,20 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CodeComponent  from './CodeComponent';
+import CodeComponent  from '../Components/CodeComponent';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import Link from './Link'
+import Link from '../Components/Link'
 import {Row, Col, Button, Navbar, Container, Nav, NavDropdown, Table} from 'react-bootstrap'
-import logo from './logo.png'
+import logo from '../assets/logo.png'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css' 
-import graph from './graph.PNG'
-import graph2 from './graph2.PNG'
-import gates from './gates.png'
-import gates2 from './gates2.PNG'
-import tree from './tree.png'
-import chart from './prefix.PNG'
+import graph from '../assets/graph.PNG'
+import graph2 from '../assets/graph2.PNG'
+import gates from '../assets/gates.png'
+import gates2 from '../assets/gates2.PNG'
+import tree from '../assets/tree.png'
+import chart from '../assets/prefix.PNG'
 class Hard extends React.Component {
     render() {
         return(
