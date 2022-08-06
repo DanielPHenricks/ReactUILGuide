@@ -26,6 +26,7 @@
     "react-mathlive": "^3.0.5-preview.1",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-syntax-highlighter": "^15.5.0",
     "rehype-katex": "^6.0.2",
     "remark-gfm": "^3.0.1",
     "remark-math": "^5.1.1",

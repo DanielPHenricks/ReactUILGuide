@@ -1,11 +1,11 @@
 import React from 'react';
 import {Row, Col, Button, Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
-import logo from './logo.png'
+import logo from '../assets/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CodeComponent  from './CodeComponent';
+import CodeComponent  from '../Components/CodeComponent';
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import Link from './Link'
+import Link from '../Components/Link'
 import { Table } from 'react-bootstrap'
 //all md at end of document
 class Easy extends React.Component {
